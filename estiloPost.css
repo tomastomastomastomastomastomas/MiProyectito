@@ -1,0 +1,93 @@
+a{
+    text-decoration: none;
+}
+nav{
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    margin-top: 1%; 
+    padding: 0 4%;
+}
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    padding-left: 0%;
+}
+.menus{
+    display: flex; gap: 70px; list-style-type: none;
+}
+.hr-nav{
+    background-color: #6DE4EA;
+    justify-content: center;
+    align-items: top;
+    border: 5px 0px 0px 0px;
+    border-style: solid;
+    border-color: #6DE4EA;
+    color: #6DE4EA;
+    border-radius: 6px 6px 6px 6px;
+    margin-top: 0.8%;
+    width: 92%;
+}
+body{
+    font-family: "Montserrat";
+    margin: 0;
+}
+.azul{
+    color: #18A0FB;
+}
+input{
+    height: 2.125rem;
+    width: 13rem;
+    border-color: #18A0FB;
+    border-style: solid;
+    border-radius: 0px 6px 6px 0px;
+    margin-right: 10px;
+}
+#logo{
+    font-family: "Cinzel Decorative";
+    font-size: 150%;
+    margin-left: 5%;
+    margin-right: 50%;
+    padding-left: 0%;    
+}
+button{
+    color: #FFFFFF;
+    background-color: #18A0FB;
+    width: 27%;
+    height: 2.5rem;
+    border-radius: 6px 0px 0px 6px;
+    border-style: none;
+}
+#caja-fin{
+    flex: 1; display: flex; justify-content: flex-end;
+}
+#caja-medio{
+    flex: 2; 
+    display: flex; 
+    justify-content: center;
+}
+#caja-inicio{
+    flex: 1;
+    display: flex; 
+    justify-content: flex-start;
+    margin-right: 0%;
+    padding-right: 0%;
+}
+.blanco{
+    color:white;
+}
+footer{
+    background-color: #000000CC;
+    width: 100%;
+    align-items: center;
+    padding: 5% 0%;
+}
+.footer{
+    display: flex; gap: 70px; list-style-type: none; font-weight: 600;
+}
+#logofooter{
+    font-family: "Cinzel Decorative";
+    font-size: 36px;
+    color:white;
+}
