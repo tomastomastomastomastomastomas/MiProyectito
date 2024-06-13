@@ -15,7 +15,12 @@ ul{
     padding-left: 0%;
 }
 .menus{
-    display: flex; gap: 70px; list-style-type: none;
+    display: flex;
+    gap: 70px; 
+    list-style-type: none;
+}
+.flex{
+    display: flex;
 }
 .hr-nav{
     background-color: #6DE4EA;
@@ -29,14 +34,19 @@ ul{
     margin-top: 0.8%;
     width: 92%;
 }
-body{
+h1, h2, h3, h4, h5, h6, p, a, span, li, button, input{
     font-family: "Montserrat";
+} 
+body{
     margin: 0;
 }
-.azul{
+main{
+    margin-left: 5%;
+}
+.blue{
     color: #18A0FB;
 }
-input{
+#nav-input{
     height: 2.125rem;
     width: 13rem;
     border-color: #18A0FB;
@@ -51,7 +61,7 @@ input{
     margin-right: 50%;
     padding-left: 0%;    
 }
-button{
+#search-button{
     color: #FFFFFF;
     background-color: #18A0FB;
     width: 27%;
@@ -59,22 +69,22 @@ button{
     border-radius: 6px 0px 0px 6px;
     border-style: none;
 }
-#caja-fin{
+#end-box{
     flex: 1; display: flex; justify-content: flex-end;
 }
-#caja-medio{
+#middle-box{
     flex: 2; 
     display: flex; 
     justify-content: center;
 }
-#caja-inicio{
+#start-box{
     flex: 1;
-    display: flex; 
+    display: flex;
     justify-content: flex-start;
     margin-right: 0%;
     padding-right: 0%;
 }
-.blanco{
+.white{
     color:white;
 }
 footer{

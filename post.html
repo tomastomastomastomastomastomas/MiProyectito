@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Single Post</title>
-    <link rel="stylesheet" href="./estiloPost.css">
+    <link rel="stylesheet" href="./css/estiloPost.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
@@ -13,129 +13,176 @@
 <body>
     <header>
         <nav>
-            <div id="caja-inicio">
-                <p><b><span id="logo" class="azul">Logo</span></b></p>
+            <div id="start-box">
+                <p><b><span id="logo" class="blue">Logo</span></b></p>
             </div>
-            <div id="caja-medio">
-                <ul style="display: flex; gap: 70px; list-style-type: none;">
-                    <li><a class="azul" href="">Menu</a></li>
-                    <li><a class="azul" href="">Menu</a></li>
-                    <li><a class="azul" href="">Menu</a></li>
-                    <li><a class="azul" href="">Menu</a></li>
+            <div id="middle-box">
+                <ul class="menus">
+                    <li><a class="blue" href="">Menu</a></li>
+                    <li><a class="blue" href="">Menu</a></li>
+                    <li><a class="blue" href="">Menu</a></li>
+                    <li><a class="blue" href="">Menu</a></li>
                 </ul>
             </div>
-            <div id="caja-fin">
-                <button>Search</button>
-                <input type="text" class="">
+            <div id="end-box">
+                <button id="search-button">Search</button>
+                <input id="nav-input"type="text" class="">
             </div>
         </nav>       
         <hr class="hr-nav">
-        <div>
-            <span>home</span>
-            <span>post title</span>
-        </div>
     </header>
-    <main>
-        <section>
-            <h1>
-                Post Title
-            </h1>
+        <main class="flex">
             <div>
-                <span>author</span>
-                <hr>
-                <span>category</span>
-                <hr>
-                <span>a min ago</span>
+                <section>
+                    <div style="margin-left: 1%;">
+                        <div>
+                            <span>home</span>
+                            <span>/</span>
+                            <span>post title</span>
+                        </div>
+                        <h1>
+                            Post Title
+                        </h1>
+                        <div style="display: flex; justify-content: flex-start; align-content: center;">
+                            <span>Author</span>
+                            <hr style="margin: 0; border: 1px; border-style: solid;">
+                            
+                            <a class="blue" href="">Category</a>
+                            <hr style="margin: 0;">
+                            <span>a min ago</span>
+                        </div>
+                    </div>
+                    <img src="./imgs/Rectangle.png" alt="Post Image" style="width: 100%;">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula nibh, interdum non enim sit amet, iaculis aliquet nunc. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam sit amet ipsum ac velit egestas ultrices. Vestibulum et neque id ex semper varius a sit amet metus. Vivamus congue dolor eget aliquam hendrerit. Etiam iaculis finibus egestas. Nam viverra urna quis odio efficitur malesuada. Maecenas rhoncus enim eu scelerisque rutrum. Pellentesque et mollis enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed commodo leo. Suspendisse potenti. Maecenas gravida ipsum placerat ligula posuere, ut rhoncus velit eleifend.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula nibh, interdum non enim sit amet, iaculis aliquet nunc. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam sit amet ipsum ac velit egestas ultrices. Vestibulum et neque id ex semper varius a sit amet metus. Vivamus congue dolor eget aliquam hendrerit. Etiam iaculis finibus egestas. Nam viverra urna quis odio efficitur malesuada. Maecenas rhoncus enim eu scelerisque rutrum. Pellentesque et mollis enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed commodo leo. Suspendisse potenti. Maecenas gravida ipsum placerat ligula posuere, ut rhoncus velit eleifend.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula nibh, interdum non enim sit amet, iaculis aliquet nunc. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam sit amet ipsum ac velit egestas ultrices. Vestibulum et neque id ex semper varius a sit amet metus. Vivamus congue dolor eget aliquam hendrerit. Etiam iaculis finibus egestas. Nam viverra urna quis odio efficitur malesuada. Maecenas rhoncus enim eu scelerisque rutrum. Pellentesque et mollis enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed commodo leo. Suspendisse potenti. Maecenas gravida ipsum placerat ligula posuere, ut rhoncus velit eleifend.</p>
+                    <hr>
+                    <div class="flex">
+                        <div>
+                            <span>Share this</span>
+                            <a href=""><img src="imgs/facebook.svg" alt="facebook icon"></a>
+                            <a href=""><img src="imgs/twitter.svg" alt="twitter icon"></a>
+                            <a href=""><img src="imgs/instagram.svg" alt="instagram icon"></a>
+                        </div>
+                        <div>
+                            <button style="color: #00000080;
+                            background-color: #C4C4C480;
+                            border-radius: 100px;
+                            border-style: none;
+                            ;">design</button>
+                            <button style="color: #00000080;
+                            background-color: #C4C4C480;
+                            border-radius: 100px;
+                            border-style: none;">web</button>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h4>More Posts</h4>
+                    <div class="flex">
+                        <article>
+                            <img src="imgs/Rectangle.png" style="width: 100%;" alt="Post image">
+                            <h3>Post title</h3>
+                        </article>
+                        <article>
+                            <img src="imgs/Rectangle.png" style="width: 100%;" alt="Post image">
+                            <h3>Post title</h3>
+                        </article>
+                        <article>
+                            <img src="imgs/Rectangle.png" style="width: 100%;" alt="Post image">
+                            <h3>Post title</h3>
+                        </article>
+                    </div>
+                </section>
+                <section>
+                    <h3>Comments</h3>
+                    <div>
+                        <input placeholder="Username..." type="text">
+                        <input placeholder="Your Comment..." type="text">
+                        <button>Comment</button>
+                    </div>
+                    <div class="flex" style="background: #C4C4C44D;
+                    ">
+                        <div style="display: flex; flex-direction: column;">
+                            <img src="./imgs/user.svg" alt="User">
+                            <span>User</apan>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula nibh, interdum non enim sit amet, iaculis aliquet nunc.</p>
+                            <span>Reply</span>
+                            <span>a min ago</span>
+                        </div>
+                    </div>
+                    <div class="flex" style="background: #C4C4C44D;
+                    ">
+                        <div style="display: flex; flex-direction: column;">
+                            <img src="./imgs/user.svg" alt="User">
+                            <span>User</apan>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula nibh, interdum non enim sit amet, iaculis aliquet nunc.</p>
+                            <span>Reply</span>
+                            <span>a min ago</span>
+                        </div>
+                    </div>
+                    <div class="flex" style="background: #C4C4C44D;
+                    ">
+                        <div style="display: flex; flex-direction: column;">
+                            <img src="./imgs/user.svg" alt="User">
+                            <span>User</apan>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula nibh, interdum non enim sit amet, iaculis aliquet nunc.</p>
+                            <span>Reply</span>
+                            <span>a min ago</span>
+                        </div>
+                    </div>
+                </section>
             </div>
-            <img src="" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula nibh, interdum non enim sit amet, iaculis aliquet nunc. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam sit amet ipsum ac velit egestas ultrices. Vestibulum et neque id ex semper varius a sit amet metus. Vivamus congue dolor eget aliquam hendrerit. Etiam iaculis finibus egestas. Nam viverra urna quis odio efficitur malesuada. Maecenas rhoncus enim eu scelerisque rutrum. Pellentesque et mollis enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed commodo leo. Suspendisse potenti. Maecenas gravida ipsum placerat ligula posuere, ut rhoncus velit eleifend.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula nibh, interdum non enim sit amet, iaculis aliquet nunc. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam sit amet ipsum ac velit egestas ultrices. Vestibulum et neque id ex semper varius a sit amet metus. Vivamus congue dolor eget aliquam hendrerit. Etiam iaculis finibus egestas. Nam viverra urna quis odio efficitur malesuada. Maecenas rhoncus enim eu scelerisque rutrum. Pellentesque et mollis enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed commodo leo. Suspendisse potenti. Maecenas gravida ipsum placerat ligula posuere, ut rhoncus velit eleifend.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula nibh, interdum non enim sit amet, iaculis aliquet nunc. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam sit amet ipsum ac velit egestas ultrices. Vestibulum et neque id ex semper varius a sit amet metus. Vivamus congue dolor eget aliquam hendrerit. Etiam iaculis finibus egestas. Nam viverra urna quis odio efficitur malesuada. Maecenas rhoncus enim eu scelerisque rutrum. Pellentesque et mollis enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed commodo leo. Suspendisse potenti. Maecenas gravida ipsum placerat ligula posuere, ut rhoncus velit eleifend.</p>
-            <hr>
-            <div>
-                <span>Share this</span>
-                <a href=""><img src="" alt=""></a>
-                <a href=""><img src="" alt=""></a>
-                <a href=""><img src="" alt=""></a>
-            </div>
-            <div>
-                <button>design</button>
-                <button>web</button>
-            </div>
-        </section>
-        <section>
-            <h4>Most Posts</h4>
-            <div></div>
-            <div></div>
-            <div></div>
-        </section>
-        <section>
-            <h3></h3>
-            <div>
-                <input type="text">
-                <input type="text">
-                <button></button>
-            </div>
-            <div>
-                <div>
-                    <img src="" alt="">
-                    <span></apan>
+            <aside>
+                <div class="flex">
+                    <hr style="margin: 0;">
+                    <h2>Table of Contents</h2>
                 </div>
-                <div>
-                    <p></p>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <img src="" alt="">
-                    <span></apan>
-                </div>
-                <div>
-                    <p></p>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <img src="" alt="">
-                    <span></apan>
-                </div>
-                <div>
-                    <p></p>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </section>
-    </main>
-    <aside>
-        <div>
-            <hr>
-            <h2></h2>
-        </div>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-    </aside>
+                <ul>
+                    <li>
+                        <a class="blue" href="">Lorem ipsum</a>
+                    </li>
+                    <li>
+                    
+                        <a class="blue" href="">Lorem ipsum</a>
+                    </li>
+                    <li>
+                        
+                    </li>
+                    <li>
+                        
+                    </li>
+                    <li>
+
+                    </li>
+                    <a class="blue" href="">Lorem ipsum</a>
+                    <a class="blue" href="">Lorem ipsum</a>
+                    <a class="blue" href="">Lorem ipsum</a>
+
+                </ul>
+            </aside>
+        </main>
+    </div>
     <footer>
         <nav>
-            <div id="caja-inicio">
+            <div id="start-box">
                 <p><b><span id="logofooter">Logo</span></b></p>
             </div>
-            <div id="caja-medio">
+            <div id="middle-box">
                 <ul class="footer">
-                    <li><a class="blanco" href="">Additional Link</a></li>
-                    <li><a class="blanco" href="">Additional Link</a></li>
-                    <li><a class="blanco" href="">Additional Link</a></li>
+                    <li><a class="white" href="">Additional Link</a></li>
+                    <li><a class="white" href="">Additional Link</a></li>
+                    <li><a class="white" href="">Additional Link</a></li>
                 </ul>
             </div>
-            <div id="caja-fin">
-                <p class="blanco">© Your Company 2022. We love you!</p>
+            <div id="end-box">
+                <p class="white">© Your Company 2022. We love you!</p>
             </div>
         </nav>
     </footer>
