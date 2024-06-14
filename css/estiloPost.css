@@ -54,6 +54,9 @@ main{
     border-radius: 0px 6px 6px 0px;
     margin-right: 10px;
 }
+input::placeholder{
+    text-align: center;
+}
 #logo{
     font-family: "Cinzel Decorative";
     font-size: 150%;
@@ -100,4 +103,7 @@ footer{
     font-family: "Cinzel Decorative";
     font-size: 36px;
     color:white;
+}
+.font18{
+    font-size: 18px;
 }
