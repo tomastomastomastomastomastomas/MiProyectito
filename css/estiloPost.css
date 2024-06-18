@@ -1,6 +1,38 @@
 a{
     text-decoration: none;
 }
+.flex{
+    display: flex;
+}
+h1, h2, h3, h4, h5, h6, p, a, span, li, button, input{
+    font-family: "Montserrat";
+}
+main{
+    margin-left: 5%;
+}
+.blue{
+    color: #18A0FB;
+}
+input::placeholder{
+    text-align: center;
+}
+.turquoise{
+    border: 1px solid #6DE4EA;
+    margin: 0;
+}
+body{
+    margin: 0;
+}
+
+
+#logo{
+    font-family: "Cinzel Decorative";
+    font-size: 160%;
+    margin-left: 5%;
+    margin-right: 50%;
+    padding-left: 0%;
+    font-weight: 700;    
+}
 nav{
     display: flex; 
     align-items: center; 
@@ -8,19 +40,37 @@ nav{
     margin-top: 1%; 
     padding: 0 4%;
 }
-ul{
+
+#end-box{
+    width: 25%;; display: flex; justify-content: flex-end;
+}
+#middle-box{
+    width: 50%;; 
+    display: flex; 
+    justify-content: center;
+}
+#start-box{
+    width: 25%;;
     display: flex;
-    list-style: none;
     justify-content: flex-start;
-    padding-left: 0%;
+    margin-right: 0%;
+    padding-right: 0%;
 }
-.menus{
-    display: flex;
-    gap: 70px; 
-    list-style-type: none;
+#nav-input{
+    height: 2.125rem;
+    width: 13rem;
+    border-color: #18A0FB;
+    border-style: solid;
+    border-radius: 0px 6px 6px 0px;
+    margin-right: 10px;
 }
-.flexwow{
-    display: flex;
+#search-button{
+    color: #FFFFFF;
+    background-color: #18A0FB;
+    width: 90px;
+    height: 2.5rem;
+    border-radius: 6px 0px 0px 6px;
+    border-style: none;
 }
 .hr-nav{
     background-color: #6DE4EA;
@@ -34,59 +84,101 @@ ul{
     margin-top: 0.8%;
     width: 92%;
 }
-h1, h2, h3, h4, h5, h6, p, a, span, li, button, input{
-    font-family: "Montserrat";
-} 
-body{
+.menus{
+    display: flex;
+    gap: 70px; 
+    list-style-type: none;
+    padding-left: 0%;
+}
+.menus li{
+    font-size: 15px;
+}
+
+
+
+
+#page-info-container{
+    margin-left: 1%; margin-top: 5%;
+}
+#page-info{
+    opacity: 50%;  font-weight: 400; font-size: 18px;
+}
+#page-info span{
+    font-weight: 500;
+}
+.post-info-hr{
     margin: 0;
 }
-main{
-    margin-left: 5%;
+#post-info{
+    justify-content: flex-start; align-content: center; gap: 10px; margin-bottom: 2%;
 }
-.blue{
-    color: #18A0FB;
+#post-info span, #post-info a{
+    font-weight: 500;
+    font-size: 24px;
 }
-#nav-input{
-    height: 2.125rem;
-    width: 13rem;
-    border-color: #18A0FB;
-    border-style: solid;
-    border-radius: 0px 6px 6px 0px;
-    margin-right: 10px;
+#post-info hr{
+    border: 0.5px; border-style: solid; color:#00000080;
 }
-input::placeholder{
-    text-align: center;
+
+h1{
+    font-size: 48px; font-weight: 700; margin: 1% 0;
 }
-#logo{
-    font-family: "Cinzel Decorative";
-    font-size: 150%;
-    margin-left: 5%;
-    margin-right: 50%;
-    padding-left: 0%;    
+p{
+    font-size: 18px;
 }
-#search-button{
-    color: #FFFFFF;
-    background-color: #18A0FB;
-    width: 27%;
-    height: 2.5rem;
-    border-radius: 6px 0px 0px 6px;
-    border-style: none;
+#content{
+    width: 100%; height: 50%; margin-bottom: 3%;
 }
-#end-box{
-    flex: 1; display: flex; justify-content: flex-end;
+
+
+
+
+
+#share-hr{
+    margin: 5% 0;
 }
-#middle-box{
-    flex: 2; 
-    display: flex; 
-    justify-content: center;
+#social-media{
+    align-items: center; gap: 15px;
 }
-#start-box{
-    flex: 1;
-    display: flex;
-    justify-content: flex-start;
-    margin-right: 0%;
-    padding-right: 0%;
+.share-button{
+    color: #00000080;
+    background-color: #C4C4C480;
+    border-radius: 100px;
+    border-style: none; 
+    padding: 7px 13px;
+    font-weight: 550;
 }
+.share-button-container{
+    align-items: center; gap: 20px;
+}
+#share-container{
+    justify-content: space-between; align-items: center;
+}
+.post-title{
+    font-size: 24px;
+    font-weight: 500;
+}
+#more-post-container article{
+    width: 30%;
+}
+#more-post-container article img{
+    width: 100%; height: 60%;
+}
+
+
+
+#more-post-section{
+    margin-top: 5%;
+}
+#more-post-container{
+    justify-content: space-between;
+}
+.more-post-title{
+    font-weight: 700; font-size: 22px;
+}
+
+
+
 .white{
     color:white;
 }
@@ -99,11 +191,99 @@ footer{
 .footer{
     display: flex; gap: 70px; list-style-type: none; font-weight: 600;
 }
-#logofooter{
+#logo-footer{
     font-family: "Cinzel Decorative";
     font-size: 36px;
     color:white;
+    font-weight: 700;
 }
+
+
+
+
+
 .font18{
     font-size: 18px;
+}
+
+
+
+h3{
+    font-size: 32px; font-weight: 550;
+}
+.comment-container{
+    background: #C4C4C44D; gap: 15px; padding: 0 3%; margin: 5% 0%; padding: 2%; font-weight: 500;
+}
+.user{
+    display: flex; flex-direction: column;  align-items: center; margin-top: 1%;
+}
+.reply{
+    opacity: 50%;
+}
+.comment-info{
+    display: flex; gap: 15px; opacity: 50%;
+}
+#comment-input{
+    width: 50%;
+}
+#comment-button{
+    color: #FFFFFF;
+    background-color: #18A0FB;
+    border-style: none;
+    width: 133px;
+    height: 40px;
+}
+#comment-input-container{
+    display: flex;
+    justify-content: space-between;
+}
+#comment-input-container input, #comment-input-container button{
+    border-radius: 5px;
+    border-color: #00000060;
+}
+#comment-section{
+    margin-bottom: 12%;
+    width: 70%;
+}
+
+
+
+
+
+aside{
+    width: 180%;
+    margin-top: 140px;
+    margin-left: 20px;
+}
+#content-container{
+    gap: 34px;
+}
+#content-title{
+    font-size: 32px;
+    margin: 0;
+}
+#content-links{
+    flex-direction: column;
+    list-style: none;
+    font-size: 18px;
+}
+#content-links li{
+    margin-top: 2%;
+}
+#content-links :nth-child(3){
+    margin-left: 5%;
+}
+#content-links :nth-child(4){
+    margin-left: 10%;
+}
+
+
+
+
+
+#author{
+    color: #6DE4EA;
+}
+#a-min-ago{
+    color: #00000080;
 }

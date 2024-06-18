@@ -14,7 +14,7 @@
     <header>
         <nav>
             <div id="start-box">
-                <p><b><span id="logo" class="blue">Logo</span></b></p>
+                <span id="logo" class="blue">Logo</span>
             </div>
             <div id="middle-box">
                 <ul class="menus">
@@ -34,134 +34,124 @@
         <main class="flex">
             <div>
                 <section>
-                    <div style="margin-left: 1%;">
-                        <div>
-                            <span>home</span>
+                    <div id="page-info-container">
+                        <div id="page-info">
+                            <span class="blue">home</span>
                             <span>/</span>
                             <span>post title</span>
                         </div>
-                        <h1>
-                            Post Title
-                        </h1>
-                        <div style="display: flex; justify-content: flex-start; align-content: center;">
-                            <span>Author</span>
-                            <hr style="margin: 0; border: 1px; border-style: solid;">
-                            
+                        <h1>Post Title</h1>
+                        <div class="flex" id="post-info">
+                            <span id="author">Author</span>
+                            <hr class="post-info-hr">    
                             <a class="blue" href="">Category</a>
-                            <hr style="margin: 0;">
-                            <span>a min ago</span>
+                            <hr class="post-info-hr">
+                            <span id="a-min-ago">a min ago</span>
                         </div>
                     </div>
-                    <img src="./imgs/Rectangle.png" alt="Post Image" style="width: 100%;">
+                    <img src="./imgs/Rectangle.jpg" alt="Post Image" id="content">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula nibh, interdum non enim sit amet, iaculis aliquet nunc. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam sit amet ipsum ac velit egestas ultrices. Vestibulum et neque id ex semper varius a sit amet metus. Vivamus congue dolor eget aliquam hendrerit. Etiam iaculis finibus egestas. Nam viverra urna quis odio efficitur malesuada. Maecenas rhoncus enim eu scelerisque rutrum. Pellentesque et mollis enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed commodo leo. Suspendisse potenti. Maecenas gravida ipsum placerat ligula posuere, ut rhoncus velit eleifend.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula nibh, interdum non enim sit amet, iaculis aliquet nunc. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam sit amet ipsum ac velit egestas ultrices. Vestibulum et neque id ex semper varius a sit amet metus. Vivamus congue dolor eget aliquam hendrerit. Etiam iaculis finibus egestas. Nam viverra urna quis odio efficitur malesuada. Maecenas rhoncus enim eu scelerisque rutrum. Pellentesque et mollis enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed commodo leo. Suspendisse potenti. Maecenas gravida ipsum placerat ligula posuere, ut rhoncus velit eleifend.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula nibh, interdum non enim sit amet, iaculis aliquet nunc. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam sit amet ipsum ac velit egestas ultrices. Vestibulum et neque id ex semper varius a sit amet metus. Vivamus congue dolor eget aliquam hendrerit. Etiam iaculis finibus egestas. Nam viverra urna quis odio efficitur malesuada. Maecenas rhoncus enim eu scelerisque rutrum. Pellentesque et mollis enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed commodo leo. Suspendisse potenti. Maecenas gravida ipsum placerat ligula posuere, ut rhoncus velit eleifend.</p>
-                    <hr>
-                    <div class="flex" style="justify-content: space-between; ">
-                        <div style="display: flex; align-items: center; gap: 15px;">
-                            <span>Share this</span>
+                    <hr class="turquoise" id="share-hr">
+                    <div class="flex" id="share-container">
+                        <div class="flex" id="social-media">
+                            <span class="post-title">Share this</span>
                             <a href=""><img src="imgs/facebook.svg" alt="facebook icon"></a>
                             <a href=""><img src="imgs/twitter.svg" alt="twitter icon"></a>
                             <a href=""><img src="imgs/instagram.svg" alt="instagram icon"></a>
                         </div>
-                    <div class="" style="display: flex; align-items: center; gap: 20px;">
-                            <button class="font18" style="color: #00000080;
-                            background-color: #C4C4C480;
-                            border-radius: 100px;
-                            border-style: none;
-                            ;">design</button>
-                            <button class="font18" style="color: #00000080;
-                            background-color: #C4C4C480;
-                            border-radius: 100px;
-                            border-style: none; padding: 5%;">web</button>
+                        <div class="flex share-button-container">
+                            <button class="font18 share-button">design</button>
+                            <button class="font18 share-button">web</button>
                         </div>
                     </div>
                 </section>
-                <section>
-                    <h4>More Posts</h4>
-                    <div class="flex" style="justify-content: space-between;">
-                        <article style="width: 30%;">
-                            <img src="imgs/Rectangle.png" style="width: 100%;" alt="Post image">
-                            <h3 style="font-weight: 500;">Post title</h3>
+                <section id="more-post-section">
+                    <h4 class="post-title">More Posts</h4>
+                    <div class="flex" id="more-post-container">
+                        <article>
+                            <img src="imgs/Rectangle.jpg" alt="Post image">
+                            <h3 class="more-post-title">Post title</h3>
                         </article>
-                        <article style="width: 30%;">
-                            <img src="imgs/Rectangle.png" style="width: 100%;" alt="Post image">
-                            <h3 style="font-weight: 500;">Post title</h3>
+                        <article>
+                            <img src="imgs/Rectangle.jpg" alt="Post image">
+                            <h3 class="more-post-title">Post title</h3>
                         </article>
-                        <article style="width: 30%;">
-                            <img src="imgs/Rectangle.png" style="width: 100%;" alt="Post image">
-                            <h3 style="font-weight: 500;">Post title</h3>
+                        <article>
+                            <img src="imgs/Rectangle.jpg" alt="Post image">
+                            <h3 class="more-post-title">Post title</h3>
                         </article>
                     </div>
                 </section>
-                <section>
+                <section iD="comment-section">
                     <h3>Comments</h3>
-                    <div>
+                    <div id="comment-input-container">
                         <input placeholder="Username..." type="text">
-                        <input placeholder="Your Comment..." type="text">
-                        <button>Comment</button>
+                        <input id="comment-input" placeholder="Your Comment..." type="text">
+                        <button id="comment-button">Comment</button>
                     </div>
-                    <div class="flex" style="background: #C4C4C44D;">
-                        <div style="display: flex; flex-direction: column;">
+                    <div class="flex comment-container">
+                        <div class="user">
                             <img src="./imgs/user.svg" alt="User">
-                            <span>User</apan>
+                            <span class="font18">user</apan>
                         </div>
                         <div>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula nibh, interdum non enim sit amet, iaculis aliquet nunc.</p>
-                            <span>Reply</span>
-                            <span>a min ago</span>
+                            <div class="comment-info">
+                                <span class="font18">Reply</span>
+                                <span class="font18 blue">a min ago</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="flex" style="background: #C4C4C44D;
-                    ">
-                        <div style="display: flex; flex-direction: column;">
+                    <div class="flex comment-container">
+                        <div class="user">
                             <img src="./imgs/user.svg" alt="User">
-                            <span>User</apan>
+                            <span class="font18">user</apan>
                         </div>
                         <div>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula nibh, interdum non enim sit amet, iaculis aliquet nunc.</p>
-                            <span>Reply</span>
-                            <span>a min ago</span>
+                            <div class="comment-info">
+                                <span class="font18">Reply</span>
+                                <span class="font18 blue">a min ago</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="flex" style="background: #C4C4C44D;
-                    ">
-                        <div style="display: flex; flex-direction: column;">
+                    <div class="flex comment-container">
+                        <div class="user">
                             <img src="./imgs/user.svg" alt="User">
-                            <span>User</apan>
+                            <span class="font18">user</apan>
                         </div>
                         <div>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula nibh, interdum non enim sit amet, iaculis aliquet nunc.</p>
-                            <span>Reply</span>
-                            <span>a min ago</span>
+                            <div class="comment-info">
+                                <span class="font18">Reply</span>
+                                <span class="font18 blue">a min ago</span>
+                            </div>
                         </div>
                     </div>
                 </section>
             </div>
             <aside>
-                <div class="flex">
-                    <hr style="margin: 0;">
-                    <h2>Table of Contents</h2>
+                <div class="flex" id="content-container">
+                    <hr class="turquoise">
+                    <h2 id="content-title">Table of Contents</h2>
                 </div>
-                <ul style="flex-direction: column;">
+                <ul id="content-links">
                     <li>
-                        <a class="blue" href="">Lorem ipsum</a>
+                        <a class="blue" href="">lorem ipsum</a>
                     </li>
                     <li>
-                    
-                        <a class="blue" href="">Lorem ipsum</a>
+                        <a class="blue" href="">lorem ipsum</a>
                     </li>
                     <li>
-                        <a class="blue" href="">Lorem ipsum</a>
-                        
+                        <a class="blue" href="">lorem ipsum</a>
                     </li>
                     <li>
-                        <a class="blue" href="">Lorem ipsum</a>
-                        
+                        <a class="blue" href="">lorem ipsum</a>
                     </li>
                     <li>
-                        <a class="blue" href="">Lorem ipsum</a>
-
+                        <a class="blue" href="">lorem ipsum</a>
                     </li>
                 </ul>
             </aside>
@@ -170,7 +160,7 @@
     <footer>
         <nav>
             <div id="start-box">
-                <p><b><span id="logofooter">Logo</span></b></p>
+                <span id="logo-footer">Logo</span>
             </div>
             <div id="middle-box">
                 <ul class="footer">
@@ -180,11 +170,9 @@
                 </ul>
             </div>
             <div id="end-box">
-                <p class="white">© Your Company 2022. We love you!</p>
+                <span class="white">© Your Company 2022. We love you!</span>
             </div>
         </nav>
     </footer>
-
-
 </body>
 </html>
